@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9c3de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 500px; 
+    background: linear-gradient(135deg, #ba95dd, #90acda);
+    border: 1px solid #ddd; 
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    height: 7vh;
+    border-radius: 20vh;
+    opacity: 0.65;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #587fa7; 
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #788ab2;
+}
+
+button:active {
+    background-color: #4c587d;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between hours, minutes, and seconds blocks */
+}
+
+.bloc-time {
+    display: flex;
+    flex-direction: column; /* Ensures the number and the label are stacked vertically */
+    align-items: center; /* Centers the number and label horizontally */
+    gap: 10px; /* Adds space between the number and the label */
+}
+
+.count-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4d6489;
+}
+
+.value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4d6489;
+}
+
+.control-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.control-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #587fa7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-buttons button:hover {
+    background-color: #788ab2;
+}
+
+.control-buttons button:active {
+    background-color: #4c587d;
+}
+
+#resume-button {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

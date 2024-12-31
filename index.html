@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <img id="random" src="assets/timer.jpg" alt="random"/>
+        <h1><strong>Countdown Timer</strong></h1>
+
+        <div class="input-section">
+            <label for="time-input">Enter Time:</label>
+            <input type="number" id="time-input" min="0" placeholder="e.g. 2"/>
+
+            <label for="time-unit" class="sr-only">Select time unit</label>
+            <select id="time-unit">
+                <option value="hours">Hours</option>
+                <option value="minutes">Minutes</option>
+                <option value="seconds">Seconds</option>
+            </select>
+
+            <button id="start-button">Start Countdown</button>
+        </div>
+
+        <div class="countdown">
+            <div class="bloc-time hours">
+                <span class="count-title">Hours</span>
+                <span class="value" id="hours">00</span>
+            </div>
+            <div class="bloc-time min">
+                <span class="count-title">Minutes</span>
+                <span class="value" id="minutes">00</span>
+            </div>
+            <div class="bloc-time sec">
+                <span class="count-title">Seconds</span>
+                <span class="value" id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="control-buttons">
+            <button id="pause-button">Pause</button>
+            <button id="resume-button">Resume</button>
+            <button id="stop-button">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
